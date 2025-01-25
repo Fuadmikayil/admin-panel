@@ -17,22 +17,25 @@ export default function Cars() {
     }
   }, []);
 
-  if (loading) return <p>Məlumatlar yüklənir...</p>;
-  if (error) return <p>{error}</p>;
+  if (loading) return <p className="text-center text-gray-600">Məlumatlar yüklənir...</p>;
+  if (error) return <p className="text-center text-red-600">{error}</p>;
 
   return (
-    <div>
-      <h1>Maşınlar</h1>
-      <ul>
+    <div className="container mx-auto px-4 py-6">
+      <h1 className="text-3xl font-semibold text-center text-neutral-50 mb-6">Maşınlar</h1>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cars.map((car) => (
-          <li key={car.id} style={{ marginBottom: "20px" }}>
-            <h2>{car.name}</h2>
-            <p>İli: {car.year}</p>
-            <p>Rəngi: {car.color}</p>
+          <li
+            key={car.id}
+            className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <h2 className="text-xl font-semibold text-gray-800 mb-2">{car.name}</h2>
+            <p className="text-gray-600 mb-2">İli: {car.year}</p>
+            <p className="text-gray-600 mb-4">Rəngi: {car.color}</p>
             <img
               src={car.image}
               alt={car.name}
-              style={{ width: "200px", borderRadius: "10px" }}
+              className="w-full h-72 object-cover rounded-lg"
             />
           </li>
         ))}

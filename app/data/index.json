@@ -5,21 +5,21 @@
         "name": "BMW X5",
         "year": 2022,
         "color": "Qara",
-        "image": "https://example.com/bmw-x5.jpg"
+        "image": "https://m.atcdn.co.uk/vms/media/75b6c2d5b103423197c0836e61087979.jpg"
       },
       {
         "id": 2,
         "name": "Mercedes-Benz C-Class",
         "year": 2023,
-        "color": "Ağ",
-        "image": "https://example.com/mercedes-c-class.jpg"
+        "color": "Qara",
+        "image": "https://vehicle-images.dealerinspire.com/a8df-110012346/W1KAF4HB0SR242825/f8de15f715914ed48a44c83baa606d0f.jpg"
       },
       {
         "id": 3,
         "name": "Tesla Model S",
         "year": 2021,
-        "color": "Qırmızı",
-        "image": "https://example.com/tesla-model-s.jpg"
+        "color": "Ağ",
+        "image": "https://images.prismic.io/carwow/a0b54c70-b58c-482c-8d28-b72884380e42_2023+Tesla+Model+S+front+quarter+static.jpg"
       }
     ]
   }
