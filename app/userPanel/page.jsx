@@ -29,14 +29,15 @@ export default function Cars() {
             key={car.id}
             className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
-            <h2 className="text-xl font-semibold text-gray-800 mb-2">{car.name}</h2>
-            <p className="text-gray-600 mb-2">İli: {car.year}</p>
-            <p className="text-gray-600 mb-4">Rəngi: {car.color}</p>
-            <img
+             <img
               src={car.image}
               alt={car.name}
               className="w-full h-72 object-cover rounded-lg"
             />
+            <h2 className="text-xl font-semibold mt-2 text-gray-800 mb-2">{car.name}</h2>
+            <p className="text-gray-600 mb-2">İli: {car.year}</p>
+            <p className="text-gray-600 mb-4">Rəngi: {car.color}</p>
+           
           </li>
         ))}
       </ul>
